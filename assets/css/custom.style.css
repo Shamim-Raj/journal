@@ -79,6 +79,25 @@ P{
   padding:40px 0;
 }
 
+#pills-tab .nav-link{
+  background:#717A86;
+}
+#pills-tab .active{
+  background:var(--primary-color);
+}
+.item-list{
+  border:1px solid #717A86;
+  padding: 10px;
+}
+.item-list button{
+  margin-top:20px;
+  padding:2px 8px;
+  border:1px solid #c0c0c0;
+  border-radius: 5px;
+}
+
+
+
 /* ====================COMMON CSS END====================  */
 
 /* ========================nav css start============= */
