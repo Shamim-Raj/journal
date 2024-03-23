@@ -1,0 +1,222 @@
+/* ====================COMMON CSS START==================== */
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+  padding:0;
+}
+
+a{
+    text-decoration: none;
+    font-family:var(--primary-fonts);
+}
+ul,ol{
+    list-style: none;
+}
+@font-face{
+    font-family:Hind;
+    src: url(../fonts/Hind-Regular.ttf);
+} 
+@font-face{
+    font-family:Inter;
+    src: url(../fonts/Inter-Regular.ttf);
+} 
+@font-face{
+  font-family:Dm Sans;
+  src: url(../fonts/DMSans-Regular.ttf);
+} 
+
+:root{
+    --primary-color:#096596;
+    --heading-color:#111827;
+    --menu-color:#33363F;
+    --font-primary-color:#717A86;
+    --light-color:#FFFFFF;
+    --primary-weight:700;
+    --bold-weight:600;
+    --regular-weight:400;
+    --button-color:#f1f1f1;
+    --bg-secondery-color:linear-gradient(#F9F4FB, #F1F8F6);
+    --primary-fonts:"Hind" , sans-serif;
+    --secondery-fonts:'DM Sans', sans-serif;;
+    --tertiary-fonts:'Inter', sans-serif;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+}
+
+
+P{
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  text-align: center;
+  padding:56px 0px;
+}
+.header h1{
+  color:var(--heading-color);
+  text-align: center;
+  font-family:var(--primary-fonts);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48.03px;
+}
+.header h1 span{
+  color:#3FA9F5;
+  font-weight:600;
+}
+.header p{
+  color:var(--font-primary-color);
+  font-family:var(--primary-fonts);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  padding:0 480px;
+}
+
+/* ====================COMMON CSS END====================  */
+
+/* ========================nav css start============= */
+.navbar{
+  background:var(--primary-color);
+}
+.nav-item .nav-link{
+  color:var(--light-color)
+}
+
+.navbar-nav ul{
+  padding-right: 0;
+}
+.navbar-nav .nav-item:last-child {
+  padding-right: 0;
+  background: #da0303;
+}
+/* ========================nav css end============= */
+
+
+/* ========================footer css start============= */
+.footer{
+  background: var(--primary-color); 
+  /* 0998FF */
+  padding:65px 0;
+}
+.footer .card{
+  color: #fff;
+  min-height: 326px;
+  padding:34px 40px 0px 40px;
+  border-radius: 28px;
+  background: #0093FC;
+  border: none;
+  margin: 0 36px;
+}
+.footer .card-body h4{
+  color: #FFF;
+  font-family:var(--primary-fonts);
+  font-size: 25px;
+  font-weight: 400;
+  position:relative;
+  line-height:normal;
+}
+.footer .card-body h4:before{
+  content:'';
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width:52px;
+  bottom:0px;
+}
+.footer .card-body p{
+  margin-top:39px;
+  color: #FFF;
+  font-family: var(--primary-fonts);
+  font-size: 16px;
+  font-weight: 400;
+ list-style: none;
+ line-height: 22px;
+}
+.ftr-left p{
+  line-height: 22px;
+}
+.social-icon{
+  margin-left: -20px;
+  padding: 0 15px;
+  margin-top: 14px;
+}
+.footer .social-icon  li{
+ /*background:#fff;
+ */height:52px;
+ width: 52px;
+ background:#fff;
+ border-radius:50%;
+ -webkit-border-radius:50%;
+ -moz-border-radius:50%;
+ -ms-border-radius:50%;
+ -o-border-radius:50%;
+ line-height:48px;
+ text-align: center;
+}
+.ftr-center ul{
+ padding-left:0px;
+}
+.ftr-center ul li{
+  line-height:22px;
+ }
+ .ftr-center ul li i{
+  font-size: 24px;
+ }
+.ftr-right ul{
+ padding-left:0px;
+}
+.ftr-right ul{
+  line-height:20px;
+ }
+.ftr-right ul li i{
+   padding-right: 15px;
+   margin-top: 4px;
+ }
+ .ftr-right .input-email{
+  position: relative;
+  top:-30px;
+ }
+ .ftr-right .input-email input[type="text"]{
+  padding-right: 54px;
+ }
+ .ftr-right .input-email input::placeholder{
+  color: #0093FC;
+  font-family:var(--primary-fonts);
+  font-size: 16px;
+  margin-top:4px !important;
+  position: absolute;
+ }
+ .email-button{
+  width: 53px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  background: #FFD800;
+  position: absolute;
+  right: 0;
+  top:1.5px;
+ }
+ .footer-copyright{
+  margin-bottom: 0;
+  background:#3E4063;
+ }
+ .footer-copyright p{
+  padding:18px 0;
+  color: #FFF;
+  text-align: center;
+  /* Text single/200/Regular */
+  font-family:var(--secondery-fonts);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+ }
+/* ========================footer css end============= */
