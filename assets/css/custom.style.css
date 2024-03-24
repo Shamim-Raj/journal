@@ -105,7 +105,19 @@ P{
   background:var(--primary-color);
 }
 .nav-item .nav-link{
-  color:var(--light-color)
+  color:var(--light-color);
+  transition:all  0.3s;
+
+}
+.nav-item{
+  transition:all  0.3s;
+}
+.nav-item:hover{
+  background: #fff;
+  border-radius: 2px;
+}
+.nav-item:hover .nav-link{
+  color:#000;
 }
 
 .navbar-nav ul{
@@ -144,14 +156,19 @@ width: 100%;
   color:#353538;
   font-weight:500;
 }
+.publication-item  button:hover{
+  background:#c9c9c9;
+}
 .publication-item{
   background: #eeeeee82;
   margin:10px 0;
   padding:20px 20px;
+  transition: all .5s;
 }
 .publication-item:hover{
   background: var(--primary-color);
   color:#fff;
+  transition: all .5s;
 }
 .more-publication {
   margin-top:10px;
@@ -161,11 +178,37 @@ width: 100%;
   border:1px solid #c0c0c0;
   border-radius: 5px;
 }
+.more-publication button:hover{
+  background: #c9c9c9;
+}
 /* =================publication css end============== */
 /* =================team css start============== */
 #team-section{
   padding: 70px 0;
   background:#eeeded;
+}
+.team-slider-wrapper{
+  margin-top: 40px;
+}
+.team-item-slide{
+  border: 1px solid #000;
+}
+.slick-prev:before, .slick-next:before {
+  color: #1160b5;
+}
+
+.team-slide-item .img{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border: 5px solid transparent;
+  border-radius:50%;
+  position: relative;
+}
+.team-slide-item img{
+  height: 100px;
+  width: 100px;
+  
 }
 /* =================team css end============== */
 /* =============subscribe css start============ */
@@ -191,6 +234,10 @@ width: 100%;
   border: none;
   border-radius:8px;
   color:var(--primary-color);
+  transition: all 0.5s;
+}
+.subscribe button:hover{
+  background: #c9c9c9;
 }
 
 /* =============subscribe css end============ */
@@ -207,6 +254,7 @@ width: 100%;
   border-radius: 2px;
   padding: 15px;
   margin:10px 0;
+  transition: all .5s;
 }
 .news-item:hover{
   background: var(--primary-color);
@@ -224,7 +272,8 @@ width: 100%;
 }
 .news-item h5{
   line-height: 1.2;
-  color:var(--primary-color)
+  color:var(--primary-color);
+  transition: all .5s;
 }
 .news-item button{
   padding:2px 5px;
@@ -233,12 +282,15 @@ width: 100%;
   color: #2c2c2c;
   margin-top: 10px;
 }
+.news-item button:hover{
+  background: #c9c9c9;
+}
 .news-item p{
   margin-top: 10px;
 }
 /* =============latest news css end============ */
 /* ===========footer css start============ */
-  footer{
+footer{
     background: #111827;
     padding:20px;
     color:#fff;
